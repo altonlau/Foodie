@@ -1,0 +1,4 @@
+github "realm/realm-cocoa"
+github "SVProgressHUD/SVProgressHUD"
+github "SwiftyBeaver/SwiftyBeaver"
+github "Swinject/Swinject" "2.0.0-beta.2"

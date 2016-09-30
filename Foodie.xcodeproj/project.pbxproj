@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA5D524C1D9E094E007DF983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D524B1D9E094E007DF983 /* AppDelegate.swift */; };
-		FA5D524E1D9E094E007DF983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D524D1D9E094E007DF983 /* ViewController.swift */; };
-		FA5D52511D9E094E007DF983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D524F1D9E094E007DF983 /* Main.storyboard */; };
-		FA5D52531D9E094E007DF983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52521D9E094E007DF983 /* Assets.xcassets */; };
-		FA5D52561D9E094E007DF983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52541D9E094E007DF983 /* LaunchScreen.storyboard */; };
 		FA5D52611D9E094F007DF983 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52601D9E094F007DF983 /* FoodieTests.swift */; };
 		FA5D526C1D9E094F007DF983 /* FoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D526B1D9E094F007DF983 /* FoodieUITests.swift */; };
+		FA5D527F1D9E0A8D007DF983 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527A1D9E0A8D007DF983 /* Realm.framework */; };
+		FA5D52801D9E0A8D007DF983 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */; };
+		FA5D52811D9E0A8D007DF983 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */; };
+		FA5D52821D9E0A8D007DF983 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */; };
+		FA5D52831D9E0A8D007DF983 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527E1D9E0A8D007DF983 /* Swinject.framework */; };
+		FA5D52861D9E0B73007DF983 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527A1D9E0A8D007DF983 /* Realm.framework */; };
+		FA5D52871D9E0B73007DF983 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */; };
+		FA5D52881D9E0B73007DF983 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */; };
+		FA5D52891D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */; };
+		FA5D528A1D9E0B73007DF983 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527E1D9E0A8D007DF983 /* Swinject.framework */; };
+		FA5D528B1D9E0B73007DF983 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527A1D9E0A8D007DF983 /* Realm.framework */; };
+		FA5D528C1D9E0B73007DF983 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */; };
+		FA5D528D1D9E0B73007DF983 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */; };
+		FA5D528E1D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */; };
+		FA5D528F1D9E0B73007DF983 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527E1D9E0A8D007DF983 /* Swinject.framework */; };
+		FA5D529F1D9E0C0A007DF983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52941D9E0C0A007DF983 /* AppDelegate.swift */; };
+		FA5D52A01D9E0C0A007DF983 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52951D9E0C0A007DF983 /* Info.plist */; };
+		FA5D52A11D9E0C0A007DF983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52981D9E0C0A007DF983 /* Assets.xcassets */; };
+		FA5D52A21D9E0C0A007DF983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52991D9E0C0A007DF983 /* LaunchScreen.storyboard */; };
+		FA5D52A31D9E0C0A007DF983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D529B1D9E0C0A007DF983 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +50,22 @@
 
 /* Begin PBXFileReference section */
 		FA5D52481D9E094E007DF983 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA5D524B1D9E094E007DF983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA5D524D1D9E094E007DF983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA5D52501D9E094E007DF983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA5D52521D9E094E007DF983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA5D52551D9E094E007DF983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FA5D52571D9E094E007DF983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5D525C1D9E094F007DF983 /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5D52601D9E094F007DF983 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
 		FA5D52621D9E094F007DF983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5D52671D9E094F007DF983 /* FoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5D526B1D9E094F007DF983 /* FoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieUITests.swift; sourceTree = "<group>"; };
 		FA5D526D1D9E094F007DF983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5D527A1D9E0A8D007DF983 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		FA5D527E1D9E0A8D007DF983 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		FA5D52941D9E0C0A007DF983 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA5D52951D9E0C0A007DF983 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5D52981D9E0C0A007DF983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA5D529A1D9E0C0A007DF983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA5D529C1D9E0C0A007DF983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D527F1D9E0A8D007DF983 /* Realm.framework in Frameworks */,
+				FA5D52801D9E0A8D007DF983 /* RealmSwift.framework in Frameworks */,
+				FA5D52811D9E0A8D007DF983 /* SVProgressHUD.framework in Frameworks */,
+				FA5D52821D9E0A8D007DF983 /* SwiftyBeaver.framework in Frameworks */,
+				FA5D52831D9E0A8D007DF983 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D52881D9E0B73007DF983 /* SVProgressHUD.framework in Frameworks */,
+				FA5D52891D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */,
+				FA5D52871D9E0B73007DF983 /* RealmSwift.framework in Frameworks */,
+				FA5D528A1D9E0B73007DF983 /* Swinject.framework in Frameworks */,
+				FA5D52861D9E0B73007DF983 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D528D1D9E0B73007DF983 /* SVProgressHUD.framework in Frameworks */,
+				FA5D528E1D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */,
+				FA5D528C1D9E0B73007DF983 /* RealmSwift.framework in Frameworks */,
+				FA5D528F1D9E0B73007DF983 /* Swinject.framework in Frameworks */,
+				FA5D528B1D9E0B73007DF983 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +114,7 @@
 				FA5D524A1D9E094E007DF983 /* Foodie */,
 				FA5D525F1D9E094F007DF983 /* FoodieTests */,
 				FA5D526A1D9E094F007DF983 /* FoodieUITests */,
+				FA5D52791D9E0A8D007DF983 /* Frameworks */,
 				FA5D52491D9E094E007DF983 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,12 +132,14 @@
 		FA5D524A1D9E094E007DF983 /* Foodie */ = {
 			isa = PBXGroup;
 			children = (
-				FA5D524B1D9E094E007DF983 /* AppDelegate.swift */,
-				FA5D524D1D9E094E007DF983 /* ViewController.swift */,
-				FA5D524F1D9E094E007DF983 /* Main.storyboard */,
-				FA5D52521D9E094E007DF983 /* Assets.xcassets */,
-				FA5D52541D9E094E007DF983 /* LaunchScreen.storyboard */,
-				FA5D52571D9E094E007DF983 /* Info.plist */,
+				FA5D52901D9E0C0A007DF983 /* Controllers */,
+				FA5D52911D9E0C0A007DF983 /* Controls */,
+				FA5D52921D9E0C0A007DF983 /* Extensions */,
+				FA5D52931D9E0C0A007DF983 /* Misc */,
+				FA5D52961D9E0C0A007DF983 /* Objects */,
+				FA5D52971D9E0C0A007DF983 /* Resources */,
+				FA5D529D1D9E0C0A007DF983 /* Services */,
+				FA5D529E1D9E0C0A007DF983 /* Views */,
 			);
 			path = Foodie;
 			sourceTree = "<group>";
@@ -125,6 +162,79 @@
 			path = FoodieUITests;
 			sourceTree = "<group>";
 		};
+		FA5D52791D9E0A8D007DF983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D527A1D9E0A8D007DF983 /* Realm.framework */,
+				FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */,
+				FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */,
+				FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */,
+				FA5D527E1D9E0A8D007DF983 /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5D52901D9E0C0A007DF983 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA5D52911D9E0C0A007DF983 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		FA5D52921D9E0C0A007DF983 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA5D52931D9E0C0A007DF983 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D52941D9E0C0A007DF983 /* AppDelegate.swift */,
+				FA5D52951D9E0C0A007DF983 /* Info.plist */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		FA5D52961D9E0C0A007DF983 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		FA5D52971D9E0C0A007DF983 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D52981D9E0C0A007DF983 /* Assets.xcassets */,
+				FA5D52991D9E0C0A007DF983 /* LaunchScreen.storyboard */,
+				FA5D529B1D9E0C0A007DF983 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA5D529D1D9E0C0A007DF983 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA5D529E1D9E0C0A007DF983 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +245,7 @@
 				FA5D52441D9E094E007DF983 /* Sources */,
 				FA5D52451D9E094E007DF983 /* Frameworks */,
 				FA5D52461D9E094E007DF983 /* Resources */,
+				FA5D52851D9E0AA7007DF983 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,17 +305,20 @@
 					FA5D52471D9E094E007DF983 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BYL7RU9R7T;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					FA5D525B1D9E094F007DF983 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BYL7RU9R7T;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FA5D52471D9E094E007DF983;
 					};
 					FA5D52661D9E094F007DF983 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BYL7RU9R7T;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FA5D52471D9E094E007DF983;
 					};
@@ -235,9 +349,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5D52561D9E094E007DF983 /* LaunchScreen.storyboard in Resources */,
-				FA5D52531D9E094E007DF983 /* Assets.xcassets in Resources */,
-				FA5D52511D9E094E007DF983 /* Main.storyboard in Resources */,
+				FA5D52A21D9E0C0A007DF983 /* LaunchScreen.storyboard in Resources */,
+				FA5D52A11D9E0C0A007DF983 /* Assets.xcassets in Resources */,
+				FA5D52A01D9E0C0A007DF983 /* Info.plist in Resources */,
+				FA5D52A31D9E0C0A007DF983 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +372,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA5D52851D9E0AA7007DF983 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA5D52441D9E094E007DF983 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5D524E1D9E094E007DF983 /* ViewController.swift in Sources */,
-				FA5D524C1D9E094E007DF983 /* AppDelegate.swift in Sources */,
+				FA5D529F1D9E0C0A007DF983 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,20 +435,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA5D524F1D9E094E007DF983 /* Main.storyboard */ = {
+		FA5D52991D9E0C0A007DF983 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA5D52501D9E094E007DF983 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FA5D52541D9E094E007DF983 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA5D52551D9E094E007DF983 /* Base */,
+				FA5D529A1D9E0C0A007DF983 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA5D529B1D9E0C0A007DF983 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5D529C1D9E0C0A007DF983 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,6 +480,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -394,6 +531,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,7 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
-				INFOPLIST_FILE = Foodie/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Foodie/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.Foodie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
-				INFOPLIST_FILE = Foodie/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Foodie/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.Foodie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +652,7 @@
 				FA5D52721D9E094F007DF983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA5D52731D9E094F007DF983 /* Build configuration list for PBXNativeTarget "FoodieTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +661,7 @@
 				FA5D52751D9E094F007DF983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA5D52761D9E094F007DF983 /* Build configuration list for PBXNativeTarget "FoodieUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +670,7 @@
 				FA5D52781D9E094F007DF983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
