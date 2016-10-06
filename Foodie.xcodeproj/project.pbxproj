@@ -7,10 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA5D52611D9E094F007DF983 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52601D9E094F007DF983 /* FoodieTests.swift */; };
+		FA4A22CF1DA1A7DF0007B9DF /* AllServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22C91DA1A7DF0007B9DF /* AllServices.swift */; };
+		FA4A22D01DA1A7DF0007B9DF /* CuisineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CA1DA1A7DF0007B9DF /* CuisineService.swift */; };
+		FA4A22D11DA1A7DF0007B9DF /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CB1DA1A7DF0007B9DF /* LocationService.swift */; };
+		FA4A22D21DA1A7DF0007B9DF /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CC1DA1A7DF0007B9DF /* RestaurantService.swift */; };
+		FA4A22D31DA1A7DF0007B9DF /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CD1DA1A7DF0007B9DF /* SearchService.swift */; };
+		FA4A22D41DA1A7DF0007B9DF /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CE1DA1A7DF0007B9DF /* SettingsService.swift */; };
+		FA4A22D81DA1A8020007B9DF /* Cuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22D51DA1A8020007B9DF /* Cuisine.swift */; };
+		FA4A22D91DA1A8020007B9DF /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22D61DA1A8020007B9DF /* Hours.swift */; };
+		FA4A22DA1DA1A8020007B9DF /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22D71DA1A8020007B9DF /* Restaurant.swift */; };
+		FA4A22DC1DA343710007B9DF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22DB1DA343710007B9DF /* Utils.swift */; };
+		FA4A22DE1DA347680007B9DF /* RestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22DD1DA347680007B9DF /* RestaurantTests.swift */; };
+		FA4A22E01DA348780007B9DF /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22DF1DA348780007B9DF /* SearchTests.swift */; };
+		FA4A22E11DA5ED670007B9DF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527A1D9E0A8D007DF983 /* Realm.framework */; };
+		FA4A22E21DA5ED670007B9DF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */; };
+		FA4A22F61DA5EFC90007B9DF /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */; };
+		FA4A22F71DA5EFC90007B9DF /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */; };
+		FA4A22F81DA5EFC90007B9DF /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */; };
+		FA4A22FA1DA5F0380007B9DF /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */; };
+		FA4A22FC1DA5F06D0007B9DF /* UIImageView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22FB1DA5F06D0007B9DF /* UIImageView+Animation.swift */; };
+		FA4A23051DA5F1110007B9DF /* CircularImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22FD1DA5F1110007B9DF /* CircularImageButton.swift */; };
+		FA4A23071DA5F1110007B9DF /* FoodieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22FF1DA5F1110007B9DF /* FoodieButton.swift */; };
+		FA4A23081DA5F1110007B9DF /* ModalCardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A23001DA5F1110007B9DF /* ModalCardSegue.swift */; };
+		FA4A23091DA5F1110007B9DF /* ModalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A23011DA5F1110007B9DF /* ModalCardView.swift */; };
+		FA4A230A1DA5F1110007B9DF /* ProcessingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A23021DA5F1110007B9DF /* ProcessingButton.swift */; };
+		FA4A230B1DA5F1110007B9DF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A23031DA5F1110007B9DF /* RoundedButton.swift */; };
+		FA4A230C1DA5F1110007B9DF /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A23041DA5F1110007B9DF /* RoundedView.swift */; };
+		FA5D52611D9E094F007DF983 /* CuisineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52601D9E094F007DF983 /* CuisineTests.swift */; };
 		FA5D526C1D9E094F007DF983 /* FoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D526B1D9E094F007DF983 /* FoodieUITests.swift */; };
-		FA5D527F1D9E0A8D007DF983 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527A1D9E0A8D007DF983 /* Realm.framework */; };
-		FA5D52801D9E0A8D007DF983 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */; };
 		FA5D52811D9E0A8D007DF983 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */; };
 		FA5D52821D9E0A8D007DF983 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */; };
 		FA5D52831D9E0A8D007DF983 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527E1D9E0A8D007DF983 /* Swinject.framework */; };
@@ -25,10 +49,49 @@
 		FA5D528E1D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527D1D9E0A8D007DF983 /* SwiftyBeaver.framework */; };
 		FA5D528F1D9E0B73007DF983 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D527E1D9E0A8D007DF983 /* Swinject.framework */; };
 		FA5D529F1D9E0C0A007DF983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52941D9E0C0A007DF983 /* AppDelegate.swift */; };
-		FA5D52A01D9E0C0A007DF983 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52951D9E0C0A007DF983 /* Info.plist */; };
 		FA5D52A11D9E0C0A007DF983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52981D9E0C0A007DF983 /* Assets.xcassets */; };
 		FA5D52A21D9E0C0A007DF983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D52991D9E0C0A007DF983 /* LaunchScreen.storyboard */; };
 		FA5D52A31D9E0C0A007DF983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D529B1D9E0C0A007DF983 /* Main.storyboard */; };
+		FA5D52A51D9E0D60007DF983 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52A41D9E0D60007DF983 /* Constants.swift */; };
+		FA5D52A71D9E0F11007DF983 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D52A61D9E0F11007DF983 /* UIColor+Theme.swift */; };
+		FA83A7301DA5F81500253DD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A72F1DA5F81500253DD7 /* libc++.tbd */; };
+		FA83A7321DA5F81A00253DD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7311DA5F81A00253DD7 /* libz.tbd */; };
+		FA83A7331DA5F85900253DD7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */; };
+		FA83A7341DA5F85900253DD7 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */; };
+		FA83A7351DA5F85900253DD7 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */; };
+		FA83A7361DA5F85900253DD7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */; };
+		FA83A7371DA5F85900253DD7 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */; };
+		FA83A7381DA5F85900253DD7 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */; };
+		FA83A7391DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */; };
+		FA83A73A1DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */; };
+		FA83A73B1DA5F86100253DD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7311DA5F81A00253DD7 /* libz.tbd */; };
+		FA83A73C1DA5F86100253DD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7311DA5F81A00253DD7 /* libz.tbd */; };
+		FA83A73D1DA5F86400253DD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A72F1DA5F81500253DD7 /* libc++.tbd */; };
+		FA83A73E1DA5F86400253DD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A72F1DA5F81500253DD7 /* libc++.tbd */; };
+		FA83A7401DA5F8CA00253DD7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A73F1DA5F8CA00253DD7 /* Accelerate.framework */; };
+		FA83A7421DA5F8D100253DD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7411DA5F8D100253DD7 /* CoreGraphics.framework */; };
+		FA83A7441DA5F8D700253DD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7431DA5F8D700253DD7 /* CoreData.framework */; };
+		FA83A7461DA5F8DE00253DD7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7451DA5F8DE00253DD7 /* CoreLocation.framework */; };
+		FA83A7481DA5F8E700253DD7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7471DA5F8E700253DD7 /* CoreText.framework */; };
+		FA83A74A1DA5F8EF00253DD7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7491DA5F8EF00253DD7 /* GLKit.framework */; };
+		FA83A74C1DA5F8F400253DD7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A74B1DA5F8F400253DD7 /* ImageIO.framework */; };
+		FA83A74E1DA5F90000253DD7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A74D1DA5F90000253DD7 /* OpenGLES.framework */; };
+		FA83A7501DA5F90700253DD7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A74F1DA5F90700253DD7 /* QuartzCore.framework */; };
+		FA83A7521DA5F90B00253DD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7511DA5F90B00253DD7 /* SystemConfiguration.framework */; };
+		FA83A7541DA5F91000253DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7531DA5F91000253DD7 /* UIKit.framework */; };
+		FA83A75B1DA5FA9700253DD7 /* CuisineSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7571DA5FA9700253DD7 /* CuisineSettingTableViewCell.swift */; };
+		FA83A75C1DA5FA9700253DD7 /* FoodiePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7581DA5FA9700253DD7 /* FoodiePageView.swift */; };
+		FA83A75D1DA5FA9700253DD7 /* HoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7591DA5FA9700253DD7 /* HoursView.swift */; };
+		FA83A75E1DA5FA9700253DD7 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A75A1DA5FA9700253DD7 /* RestaurantTableViewCell.swift */; };
+		FA83A7671DA85A8C00253DD7 /* AllFoodiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A75F1DA85A8C00253DD7 /* AllFoodiesController.swift */; };
+		FA83A7681DA85A8C00253DD7 /* FoodieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7601DA85A8C00253DD7 /* FoodieController.swift */; };
+		FA83A7691DA85A8C00253DD7 /* InsertCuisineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7611DA85A8C00253DD7 /* InsertCuisineController.swift */; };
+		FA83A76A1DA85A8C00253DD7 /* InsertFoodieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7621DA85A8C00253DD7 /* InsertFoodieController.swift */; };
+		FA83A76B1DA85A8C00253DD7 /* InsertLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7631DA85A8C00253DD7 /* InsertLocationController.swift */; };
+		FA83A76C1DA85A8C00253DD7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7641DA85A8C00253DD7 /* MainController.swift */; };
+		FA83A76D1DA85A8C00253DD7 /* ModalCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7651DA85A8C00253DD7 /* ModalCardViewController.swift */; };
+		FA83A76E1DA85A8C00253DD7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A7661DA85A8C00253DD7 /* SettingsController.swift */; };
+		FA83A7701DA85C7600253DD7 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83A76F1DA85C7600253DD7 /* KeyboardHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +112,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA4A22C91DA1A7DF0007B9DF /* AllServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllServices.swift; sourceTree = "<group>"; };
+		FA4A22CA1DA1A7DF0007B9DF /* CuisineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineService.swift; sourceTree = "<group>"; };
+		FA4A22CB1DA1A7DF0007B9DF /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		FA4A22CC1DA1A7DF0007B9DF /* RestaurantService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
+		FA4A22CD1DA1A7DF0007B9DF /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		FA4A22CE1DA1A7DF0007B9DF /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		FA4A22D51DA1A8020007B9DF /* Cuisine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuisine.swift; sourceTree = "<group>"; };
+		FA4A22D61DA1A8020007B9DF /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		FA4A22D71DA1A8020007B9DF /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FA4A22DB1DA343710007B9DF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FA4A22DD1DA347680007B9DF /* RestaurantTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTests.swift; sourceTree = "<group>"; };
+		FA4A22DF1DA348780007B9DF /* SearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
+		FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = GoogleFrameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = GoogleFrameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = GoogleFrameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleFrameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		FA4A22FB1DA5F06D0007B9DF /* UIImageView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animation.swift"; sourceTree = "<group>"; };
+		FA4A22FD1DA5F1110007B9DF /* CircularImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageButton.swift; sourceTree = "<group>"; };
+		FA4A22FF1DA5F1110007B9DF /* FoodieButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodieButton.swift; sourceTree = "<group>"; };
+		FA4A23001DA5F1110007B9DF /* ModalCardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalCardSegue.swift; sourceTree = "<group>"; };
+		FA4A23011DA5F1110007B9DF /* ModalCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalCardView.swift; sourceTree = "<group>"; };
+		FA4A23021DA5F1110007B9DF /* ProcessingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingButton.swift; sourceTree = "<group>"; };
+		FA4A23031DA5F1110007B9DF /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		FA4A23041DA5F1110007B9DF /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		FA5D52481D9E094E007DF983 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5D525C1D9E094F007DF983 /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA5D52601D9E094F007DF983 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
+		FA5D52601D9E094F007DF983 /* CuisineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineTests.swift; sourceTree = "<group>"; };
 		FA5D52621D9E094F007DF983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5D52671D9E094F007DF983 /* FoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5D526B1D9E094F007DF983 /* FoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieUITests.swift; sourceTree = "<group>"; };
@@ -66,6 +153,34 @@
 		FA5D52981D9E0C0A007DF983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5D529A1D9E0C0A007DF983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5D529C1D9E0C0A007DF983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA5D52A41D9E0D60007DF983 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA5D52A61D9E0F11007DF983 /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		FA83A72F1DA5F81500253DD7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FA83A7311DA5F81A00253DD7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FA83A73F1DA5F8CA00253DD7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FA83A7411DA5F8D100253DD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA83A7431DA5F8D700253DD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA83A7451DA5F8DE00253DD7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA83A7471DA5F8E700253DD7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FA83A7491DA5F8EF00253DD7 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FA83A74B1DA5F8F400253DD7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FA83A74D1DA5F90000253DD7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FA83A74F1DA5F90700253DD7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA83A7511DA5F90B00253DD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA83A7531DA5F91000253DD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA83A7571DA5FA9700253DD7 /* CuisineSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineSettingTableViewCell.swift; sourceTree = "<group>"; };
+		FA83A7581DA5FA9700253DD7 /* FoodiePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiePageView.swift; sourceTree = "<group>"; };
+		FA83A7591DA5FA9700253DD7 /* HoursView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursView.swift; sourceTree = "<group>"; };
+		FA83A75A1DA5FA9700253DD7 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		FA83A75F1DA85A8C00253DD7 /* AllFoodiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllFoodiesController.swift; sourceTree = "<group>"; };
+		FA83A7601DA85A8C00253DD7 /* FoodieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodieController.swift; sourceTree = "<group>"; };
+		FA83A7611DA85A8C00253DD7 /* InsertCuisineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertCuisineController.swift; sourceTree = "<group>"; };
+		FA83A7621DA85A8C00253DD7 /* InsertFoodieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertFoodieController.swift; sourceTree = "<group>"; };
+		FA83A7631DA85A8C00253DD7 /* InsertLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertLocationController.swift; sourceTree = "<group>"; };
+		FA83A7641DA85A8C00253DD7 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		FA83A7651DA85A8C00253DD7 /* ModalCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalCardViewController.swift; sourceTree = "<group>"; };
+		FA83A7661DA85A8C00253DD7 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		FA83A76F1DA85C7600253DD7 /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +188,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5D527F1D9E0A8D007DF983 /* Realm.framework in Frameworks */,
-				FA5D52801D9E0A8D007DF983 /* RealmSwift.framework in Frameworks */,
+				FA83A7301DA5F81500253DD7 /* libc++.tbd in Frameworks */,
+				FA83A7321DA5F81A00253DD7 /* libz.tbd in Frameworks */,
+				FA83A7401DA5F8CA00253DD7 /* Accelerate.framework in Frameworks */,
+				FA83A7441DA5F8D700253DD7 /* CoreData.framework in Frameworks */,
+				FA83A7421DA5F8D100253DD7 /* CoreGraphics.framework in Frameworks */,
+				FA83A7461DA5F8DE00253DD7 /* CoreLocation.framework in Frameworks */,
+				FA83A7481DA5F8E700253DD7 /* CoreText.framework in Frameworks */,
+				FA83A74A1DA5F8EF00253DD7 /* GLKit.framework in Frameworks */,
+				FA83A74C1DA5F8F400253DD7 /* ImageIO.framework in Frameworks */,
+				FA83A74E1DA5F90000253DD7 /* OpenGLES.framework in Frameworks */,
+				FA83A7501DA5F90700253DD7 /* QuartzCore.framework in Frameworks */,
+				FA83A7521DA5F90B00253DD7 /* SystemConfiguration.framework in Frameworks */,
+				FA83A7541DA5F91000253DD7 /* UIKit.framework in Frameworks */,
+				FA4A22F61DA5EFC90007B9DF /* GoogleMaps.framework in Frameworks */,
+				FA4A22F71DA5EFC90007B9DF /* GoogleMapsBase.framework in Frameworks */,
+				FA4A22F81DA5EFC90007B9DF /* GoogleMapsCore.framework in Frameworks */,
+				FA4A22E11DA5ED670007B9DF /* Realm.framework in Frameworks */,
+				FA4A22E21DA5ED670007B9DF /* RealmSwift.framework in Frameworks */,
 				FA5D52811D9E0A8D007DF983 /* SVProgressHUD.framework in Frameworks */,
 				FA5D52821D9E0A8D007DF983 /* SwiftyBeaver.framework in Frameworks */,
 				FA5D52831D9E0A8D007DF983 /* Swinject.framework in Frameworks */,
@@ -85,10 +216,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA83A7331DA5F85900253DD7 /* GoogleMaps.framework in Frameworks */,
 				FA5D52881D9E0B73007DF983 /* SVProgressHUD.framework in Frameworks */,
+				FA83A7341DA5F85900253DD7 /* GoogleMapsBase.framework in Frameworks */,
+				FA83A7351DA5F85900253DD7 /* GoogleMapsCore.framework in Frameworks */,
 				FA5D52891D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */,
 				FA5D52871D9E0B73007DF983 /* RealmSwift.framework in Frameworks */,
+				FA83A73D1DA5F86400253DD7 /* libc++.tbd in Frameworks */,
 				FA5D528A1D9E0B73007DF983 /* Swinject.framework in Frameworks */,
+				FA83A73B1DA5F86100253DD7 /* libz.tbd in Frameworks */,
 				FA5D52861D9E0B73007DF983 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,10 +233,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA83A7361DA5F85900253DD7 /* GoogleMaps.framework in Frameworks */,
 				FA5D528D1D9E0B73007DF983 /* SVProgressHUD.framework in Frameworks */,
+				FA83A7371DA5F85900253DD7 /* GoogleMapsBase.framework in Frameworks */,
+				FA83A7381DA5F85900253DD7 /* GoogleMapsCore.framework in Frameworks */,
 				FA5D528E1D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */,
 				FA5D528C1D9E0B73007DF983 /* RealmSwift.framework in Frameworks */,
+				FA83A73E1DA5F86400253DD7 /* libc++.tbd in Frameworks */,
 				FA5D528F1D9E0B73007DF983 /* Swinject.framework in Frameworks */,
+				FA83A73C1DA5F86100253DD7 /* libz.tbd in Frameworks */,
 				FA5D528B1D9E0B73007DF983 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +288,9 @@
 		FA5D525F1D9E094F007DF983 /* FoodieTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA5D52601D9E094F007DF983 /* FoodieTests.swift */,
+				FA5D52601D9E094F007DF983 /* CuisineTests.swift */,
+				FA4A22DD1DA347680007B9DF /* RestaurantTests.swift */,
+				FA4A22DF1DA348780007B9DF /* SearchTests.swift */,
 				FA5D52621D9E094F007DF983 /* Info.plist */,
 			);
 			path = FoodieTests;
@@ -165,6 +308,23 @@
 		FA5D52791D9E0A8D007DF983 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA83A72F1DA5F81500253DD7 /* libc++.tbd */,
+				FA83A7311DA5F81A00253DD7 /* libz.tbd */,
+				FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */,
+				FA83A73F1DA5F8CA00253DD7 /* Accelerate.framework */,
+				FA83A7431DA5F8D700253DD7 /* CoreData.framework */,
+				FA83A7411DA5F8D100253DD7 /* CoreGraphics.framework */,
+				FA83A7451DA5F8DE00253DD7 /* CoreLocation.framework */,
+				FA83A7471DA5F8E700253DD7 /* CoreText.framework */,
+				FA83A7491DA5F8EF00253DD7 /* GLKit.framework */,
+				FA83A74B1DA5F8F400253DD7 /* ImageIO.framework */,
+				FA83A74D1DA5F90000253DD7 /* OpenGLES.framework */,
+				FA83A74F1DA5F90700253DD7 /* QuartzCore.framework */,
+				FA83A7511DA5F90B00253DD7 /* SystemConfiguration.framework */,
+				FA83A7531DA5F91000253DD7 /* UIKit.framework */,
+				FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */,
+				FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */,
+				FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */,
 				FA5D527A1D9E0A8D007DF983 /* Realm.framework */,
 				FA5D527B1D9E0A8D007DF983 /* RealmSwift.framework */,
 				FA5D527C1D9E0A8D007DF983 /* SVProgressHUD.framework */,
@@ -177,6 +337,14 @@
 		FA5D52901D9E0C0A007DF983 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA83A75F1DA85A8C00253DD7 /* AllFoodiesController.swift */,
+				FA83A7601DA85A8C00253DD7 /* FoodieController.swift */,
+				FA83A7611DA85A8C00253DD7 /* InsertCuisineController.swift */,
+				FA83A7621DA85A8C00253DD7 /* InsertFoodieController.swift */,
+				FA83A7631DA85A8C00253DD7 /* InsertLocationController.swift */,
+				FA83A7641DA85A8C00253DD7 /* MainController.swift */,
+				FA83A7651DA85A8C00253DD7 /* ModalCardViewController.swift */,
+				FA83A7661DA85A8C00253DD7 /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +352,13 @@
 		FA5D52911D9E0C0A007DF983 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				FA4A22FD1DA5F1110007B9DF /* CircularImageButton.swift */,
+				FA4A22FF1DA5F1110007B9DF /* FoodieButton.swift */,
+				FA4A23001DA5F1110007B9DF /* ModalCardSegue.swift */,
+				FA4A23011DA5F1110007B9DF /* ModalCardView.swift */,
+				FA4A23021DA5F1110007B9DF /* ProcessingButton.swift */,
+				FA4A23031DA5F1110007B9DF /* RoundedButton.swift */,
+				FA4A23041DA5F1110007B9DF /* RoundedView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -191,6 +366,8 @@
 		FA5D52921D9E0C0A007DF983 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FA5D52A61D9E0F11007DF983 /* UIColor+Theme.swift */,
+				FA4A22FB1DA5F06D0007B9DF /* UIImageView+Animation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,8 +375,11 @@
 		FA5D52931D9E0C0A007DF983 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				FA5D52941D9E0C0A007DF983 /* AppDelegate.swift */,
 				FA5D52951D9E0C0A007DF983 /* Info.plist */,
+				FA5D52941D9E0C0A007DF983 /* AppDelegate.swift */,
+				FA5D52A41D9E0D60007DF983 /* Constants.swift */,
+				FA83A76F1DA85C7600253DD7 /* KeyboardHandler.swift */,
+				FA4A22DB1DA343710007B9DF /* Utils.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -207,6 +387,9 @@
 		FA5D52961D9E0C0A007DF983 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				FA4A22D51DA1A8020007B9DF /* Cuisine.swift */,
+				FA4A22D61DA1A8020007B9DF /* Hours.swift */,
+				FA4A22D71DA1A8020007B9DF /* Restaurant.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -224,6 +407,12 @@
 		FA5D529D1D9E0C0A007DF983 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FA4A22C91DA1A7DF0007B9DF /* AllServices.swift */,
+				FA4A22CA1DA1A7DF0007B9DF /* CuisineService.swift */,
+				FA4A22CB1DA1A7DF0007B9DF /* LocationService.swift */,
+				FA4A22CC1DA1A7DF0007B9DF /* RestaurantService.swift */,
+				FA4A22CD1DA1A7DF0007B9DF /* SearchService.swift */,
+				FA4A22CE1DA1A7DF0007B9DF /* SettingsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -231,6 +420,10 @@
 		FA5D529E1D9E0C0A007DF983 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA83A7571DA5FA9700253DD7 /* CuisineSettingTableViewCell.swift */,
+				FA83A7581DA5FA9700253DD7 /* FoodiePageView.swift */,
+				FA83A7591DA5FA9700253DD7 /* HoursView.swift */,
+				FA83A75A1DA5FA9700253DD7 /* RestaurantTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,8 +544,8 @@
 			files = (
 				FA5D52A21D9E0C0A007DF983 /* LaunchScreen.storyboard in Resources */,
 				FA5D52A11D9E0C0A007DF983 /* Assets.xcassets in Resources */,
-				FA5D52A01D9E0C0A007DF983 /* Info.plist in Resources */,
 				FA5D52A31D9E0C0A007DF983 /* Main.storyboard in Resources */,
+				FA4A22FA1DA5F0380007B9DF /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA83A7391DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +561,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA83A73A1DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +594,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4A22D41DA1A7DF0007B9DF /* SettingsService.swift in Sources */,
+				FA83A76A1DA85A8C00253DD7 /* InsertFoodieController.swift in Sources */,
+				FA4A22FC1DA5F06D0007B9DF /* UIImageView+Animation.swift in Sources */,
+				FA5D52A71D9E0F11007DF983 /* UIColor+Theme.swift in Sources */,
+				FA4A230B1DA5F1110007B9DF /* RoundedButton.swift in Sources */,
+				FA4A22CF1DA1A7DF0007B9DF /* AllServices.swift in Sources */,
+				FA83A75E1DA5FA9700253DD7 /* RestaurantTableViewCell.swift in Sources */,
+				FA83A7681DA85A8C00253DD7 /* FoodieController.swift in Sources */,
+				FA4A23081DA5F1110007B9DF /* ModalCardSegue.swift in Sources */,
+				FA4A22D01DA1A7DF0007B9DF /* CuisineService.swift in Sources */,
 				FA5D529F1D9E0C0A007DF983 /* AppDelegate.swift in Sources */,
+				FA4A22DC1DA343710007B9DF /* Utils.swift in Sources */,
+				FA83A76C1DA85A8C00253DD7 /* MainController.swift in Sources */,
+				FA4A22D21DA1A7DF0007B9DF /* RestaurantService.swift in Sources */,
+				FA4A22D81DA1A8020007B9DF /* Cuisine.swift in Sources */,
+				FA83A7691DA85A8C00253DD7 /* InsertCuisineController.swift in Sources */,
+				FA4A22D31DA1A7DF0007B9DF /* SearchService.swift in Sources */,
+				FA4A22DA1DA1A8020007B9DF /* Restaurant.swift in Sources */,
+				FA4A22D11DA1A7DF0007B9DF /* LocationService.swift in Sources */,
+				FA4A23051DA5F1110007B9DF /* CircularImageButton.swift in Sources */,
+				FA5D52A51D9E0D60007DF983 /* Constants.swift in Sources */,
+				FA4A23071DA5F1110007B9DF /* FoodieButton.swift in Sources */,
+				FA83A76B1DA85A8C00253DD7 /* InsertLocationController.swift in Sources */,
+				FA83A75B1DA5FA9700253DD7 /* CuisineSettingTableViewCell.swift in Sources */,
+				FA4A23091DA5F1110007B9DF /* ModalCardView.swift in Sources */,
+				FA83A7701DA85C7600253DD7 /* KeyboardHandler.swift in Sources */,
+				FA4A230A1DA5F1110007B9DF /* ProcessingButton.swift in Sources */,
+				FA83A7671DA85A8C00253DD7 /* AllFoodiesController.swift in Sources */,
+				FA83A76E1DA85A8C00253DD7 /* SettingsController.swift in Sources */,
+				FA83A75C1DA5FA9700253DD7 /* FoodiePageView.swift in Sources */,
+				FA4A230C1DA5F1110007B9DF /* RoundedView.swift in Sources */,
+				FA83A75D1DA5FA9700253DD7 /* HoursView.swift in Sources */,
+				FA83A76D1DA85A8C00253DD7 /* ModalCardViewController.swift in Sources */,
+				FA4A22D91DA1A8020007B9DF /* Hours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +635,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5D52611D9E094F007DF983 /* FoodieTests.swift in Sources */,
+				FA4A22E01DA348780007B9DF /* SearchTests.swift in Sources */,
+				FA4A22DE1DA347680007B9DF /* RestaurantTests.swift in Sources */,
+				FA5D52611D9E094F007DF983 /* CuisineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +728,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -542,6 +773,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,6 +786,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleFrameworks",
+					"$(PROJECT_DIR)/GoogleFrameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Foodie/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.Foodie;
@@ -567,6 +804,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleFrameworks",
+					"$(PROJECT_DIR)/GoogleFrameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Foodie/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.Foodie;
@@ -581,6 +823,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleFrameworks",
+				);
 				INFOPLIST_FILE = FoodieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.FoodieTests;
@@ -596,6 +842,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleFrameworks",
+				);
 				INFOPLIST_FILE = FoodieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.FoodieTests;
@@ -610,6 +860,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleFrameworks",
+				);
 				INFOPLIST_FILE = FoodieUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.FoodieUITests;
@@ -624,6 +878,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BYL7RU9R7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleFrameworks",
+				);
 				INFOPLIST_FILE = FoodieUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.altonlau.FoodieUITests;
