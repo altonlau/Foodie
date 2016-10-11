@@ -96,8 +96,6 @@ class FoodiePageView: UIView {
         mapView.settings.scrollGestures = false
         mapView.settings.zoomGestures = false
         
-        hoursView.startTick()
-        
         scrollView.contentSize = CGSize(width: CGFloat(contentViews.count) * frame.size.width, height: frame.height)
         scrollView.delegate = self
         scrollView.frame = frame

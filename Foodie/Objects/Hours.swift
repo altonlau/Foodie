@@ -13,7 +13,7 @@ class Hours: NSObject {
     //# MARK: - Properties
     
     enum Weekday: Int {
-        case Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+        case sunday, monday, tuesday, wednesday, thursday, friday, saturday
     }
     
     

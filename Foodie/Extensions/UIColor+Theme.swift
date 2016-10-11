@@ -90,4 +90,8 @@ extension UIColor {
         return UIColor(hex: "#87D37C")
     }
     
+    public static var foodieLightRed: UIColor {
+        return UIColor(hex: "#E9766F")
+    }
+    
 }

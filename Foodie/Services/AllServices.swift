@@ -17,6 +17,7 @@ public class AllServices {
     init() {
         container = Container()
         container.register(CuisineService.self) { _ in CuisineServiceImplementation() }.inObjectScope(.container)
+        container.register(GoogleService.self) { _ in GoogleServiceImplementation() }.inObjectScope(.container)
         container.register(LocationService.self) { _ in LocationServiceImplementation() }.inObjectScope(.container)
         container.register(RestaurantService.self) { _ in RestaurantServiceImplementation() }.inObjectScope(.container)
         container.register(SearchService.self) { _ in SearchServiceImplementation() }.inObjectScope(.container)

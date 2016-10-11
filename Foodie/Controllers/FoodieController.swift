@@ -17,15 +17,15 @@ class FoodieController: ModalCardViewController {
     private let kAnimationSlowDuration = 1.0
     private let kDefaultSearchRadius = 100
     private let kMaximumRating: CGFloat = 5.0
-    private let kUpdateLocationInterval: TimeInterval = 20.0
     
     private let locationManager = CLLocationManager()
+    private let googleService = AllServices.services.container.resolve(GoogleService.self)!
     private let restaurantService = AllServices.services.container.resolve(RestaurantService.self)!
     
     
     //# MARK: - Variables
     
-    private var restaurantDetails: Dictionary<String, AnyObject>?
+    private var restaurantDetails: [String : Any]?
     private var timer: Timer?
     
     var restaurant: Restaurant?
@@ -52,40 +52,26 @@ class FoodieController: ModalCardViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        foodiePageView.hoursView.stopTick()
         locationManager.stopUpdatingLocation()
-        stopUpdateLocationTimer()
-    }
-    
-    
-    //# MARK: - Public Methods
-    
-    func updateLocation() {
-        if let location = locationManager.location, let restaurant = restaurant {
-//            get_travel_time(from: location, to: restaurant.location, callback: { (result) in
-//                for (mode, duration) in result {
-//                    if let label = self.travelLabelCollection.filter({ (label) -> Bool in
-//                        return label.accessibilityLabel == mode.rawValue
-//                    }).first {
-//                        UIView.transitionWithView(label, duration: self.kAnimationFastDuration, options: .TransitionCrossDissolve, animations: {
-//                            label.text = interval_to_string(duration)
-//                            }, completion: .None)
-//                    }
-//                }
-//            })
-        }
     }
     
     
     //# MARK: - Fileprivate Methods
     
-    fileprivate func startUpdateLocationTimer() {
-        timer = Timer.scheduledTimer(timeInterval: kUpdateLocationInterval, target: self, selector: #selector(updateLocation), userInfo: .none, repeats: true)
-        updateLocation()
-    }
-    
-    fileprivate func stopUpdateLocationTimer() {
-        timer?.invalidate()
+    fileprivate func updateLocation() {
+        if let location = locationManager.location, let restaurant = restaurant {
+            googleService.getTravelTime(from: location, to: restaurant.location, completion: { (result) in
+                for (mode, duration) in result {
+                    if let label = self.travelLabelCollection.filter({ (label) -> Bool in
+                        return label.accessibilityLabel == mode.rawValue
+                    }).first {
+                        UIView.transition(with: label, duration: self.kAnimationFastDuration, options: .transitionCrossDissolve, animations: {
+                            label.text = interval_to_string(duration)
+                            }, completion: .none)
+                    }
+                }
+            })
+        }
     }
     
     
@@ -109,21 +95,16 @@ class FoodieController: ModalCardViewController {
     }
     
     private func setupRestaurant(_ restaurant: Restaurant) {
-//        search_location(restaurant.name, location: restaurant.location, radius: kDefaultSearchRadius, callback: { (result) in
-//            if let result = result {
-//                get_details(result, callback: { (result) in
-//                    if let result = result?["result"] as? Dictionary<String, AnyObject> {
-//                        self.restaurantDetails = result
-//                        self.reloadViews()
-//                        return
-//                    } else {
-//                      self.reloadViews()
-//                    }
-//                })
-//            } else {
-//                self.reloadViews()
-//            }
-//        })
+        googleService.searchLocation(name: restaurant.name, location: restaurant.location, radius: kDefaultSearchRadius) { (result) in
+            if let result = result {
+                self.googleService.getDetails(for: result, completion: { (result) in
+                    if let result = result?["result"] as? [String : Any] {
+                        self.restaurantDetails = result
+                        self.reloadViews()
+                    }
+                })
+            }
+        }
     }
     
     private func setupViews(_ restaurant: Restaurant) {
@@ -149,7 +130,7 @@ class FoodieController: ModalCardViewController {
         guard let restaurantDetails = restaurantDetails else {
             foodiePageView.image = .none
             ratingView.backgroundColor = UIColor.white
-            ratingViewWidthConstraint.constant = ratingImageView.bounds.width
+            ratingViewWidthConstraint.constant = 0
             return
         }
         
@@ -164,10 +145,10 @@ class FoodieController: ModalCardViewController {
             ratingViewWidthConstraint.constant = ratingImageView.bounds.width
         }
         
-        if let periods = restaurantDetails["opening_hours"]?["periods"] as? [Dictionary<String, AnyObject>] {
+        if let periods = (restaurantDetails["opening_hours"] as? [String : Any])?["periods"] as? [[String : Any]] {
             var hours = [Hours]()
             for period in periods {
-                if let day = period["open"]?["day"] as? Int, let open = period["open"]?["time"] as? String, let close = period["close"]?["time"] as? String, let weekday = Hours.Weekday(rawValue: day) {
+                if let day = (period["open"] as? [String : Any])?["day"] as? Int, let open = (period["open"] as? [String : Any])?["time"] as? String, let close = (period["close"] as? [String : Any])?["time"] as? String, let weekday = Hours.Weekday(rawValue: day) {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "HHmm"
                     if let from = dateFormatter.date(from: open), let to = dateFormatter.date(from: close) {
@@ -179,15 +160,15 @@ class FoodieController: ModalCardViewController {
         }
         
         if restaurant?.image == .none {
-//            get_photo(restaurantDetails, size: foodiePageView.bounds.size, callback: { (result) in
-//                self.foodiePageView.image = result
-//                
-//                // Save new downloaded image for next time
-//                if let restaurant = self.restaurant {
-//                    let newRestaurant = Restaurant(name: restaurant.name, cuisines: restaurant.cuisines, location: restaurant.location, image: result)
-//                    self.restaurantService.update(restaurant, new: newRestaurant)
-//                }
-//            })
+            googleService.getPhoto(for: restaurantDetails, size: foodiePageView.bounds.size, completion: { (result) in
+                self.foodiePageView.image = result
+                
+                // Save new downloaded image for next time
+                if let restaurant = self.restaurant {
+                    let newRestaurant = Restaurant(name: restaurant.name, cuisines: restaurant.cuisines, location: restaurant.location, image: result)
+                    _ = self.restaurantService.update(old: restaurant, new: newRestaurant)
+                }
+            })
         }
     }
     
@@ -205,7 +186,7 @@ extension FoodieController: CLLocationManagerDelegate {
             label.isHidden = status == .denied || status == .notDetermined
         }
         if status == .authorizedWhenInUse {
-            startUpdateLocationTimer()
+            updateLocation()
         }
     }
     

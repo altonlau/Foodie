@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA219D941DA9EC3F003D4EA8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA219D931DA9EC3F003D4EA8 /* Alamofire.framework */; };
+		FA219D961DA9EFF1003D4EA8 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA219D951DA9EFF1003D4EA8 /* GoogleMaps.bundle */; };
+		FA219D971DA9F003003D4EA8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A73F1DA5F8CA00253DD7 /* Accelerate.framework */; };
+		FA219D991DA9F0AB003D4EA8 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA219D981DA9F0AB003D4EA8 /* GoogleService.swift */; };
+		FA219D9A1DA9F2C8003D4EA8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA219D931DA9EC3F003D4EA8 /* Alamofire.framework */; };
+		FA219D9B1DA9F2C8003D4EA8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA219D931DA9EC3F003D4EA8 /* Alamofire.framework */; };
 		FA4A22CF1DA1A7DF0007B9DF /* AllServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22C91DA1A7DF0007B9DF /* AllServices.swift */; };
 		FA4A22D01DA1A7DF0007B9DF /* CuisineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CA1DA1A7DF0007B9DF /* CuisineService.swift */; };
 		FA4A22D11DA1A7DF0007B9DF /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22CB1DA1A7DF0007B9DF /* LocationService.swift */; };
@@ -24,7 +30,6 @@
 		FA4A22F61DA5EFC90007B9DF /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */; };
 		FA4A22F71DA5EFC90007B9DF /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */; };
 		FA4A22F81DA5EFC90007B9DF /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */; };
-		FA4A22FA1DA5F0380007B9DF /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */; };
 		FA4A22FC1DA5F06D0007B9DF /* UIImageView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22FB1DA5F06D0007B9DF /* UIImageView+Animation.swift */; };
 		FA4A23051DA5F1110007B9DF /* CircularImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22FD1DA5F1110007B9DF /* CircularImageButton.swift */; };
 		FA4A23071DA5F1110007B9DF /* FoodieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A22FF1DA5F1110007B9DF /* FoodieButton.swift */; };
@@ -62,13 +67,10 @@
 		FA83A7361DA5F85900253DD7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */; };
 		FA83A7371DA5F85900253DD7 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */; };
 		FA83A7381DA5F85900253DD7 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */; };
-		FA83A7391DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */; };
-		FA83A73A1DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */; };
 		FA83A73B1DA5F86100253DD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7311DA5F81A00253DD7 /* libz.tbd */; };
 		FA83A73C1DA5F86100253DD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7311DA5F81A00253DD7 /* libz.tbd */; };
 		FA83A73D1DA5F86400253DD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A72F1DA5F81500253DD7 /* libc++.tbd */; };
 		FA83A73E1DA5F86400253DD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A72F1DA5F81500253DD7 /* libc++.tbd */; };
-		FA83A7401DA5F8CA00253DD7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A73F1DA5F8CA00253DD7 /* Accelerate.framework */; };
 		FA83A7421DA5F8D100253DD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7411DA5F8D100253DD7 /* CoreGraphics.framework */; };
 		FA83A7441DA5F8D700253DD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7431DA5F8D700253DD7 /* CoreData.framework */; };
 		FA83A7461DA5F8DE00253DD7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA83A7451DA5F8DE00253DD7 /* CoreLocation.framework */; };
@@ -112,6 +114,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA219D931DA9EC3F003D4EA8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		FA219D951DA9EFF1003D4EA8 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleFrameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		FA219D981DA9F0AB003D4EA8 /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
 		FA4A22C91DA1A7DF0007B9DF /* AllServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllServices.swift; sourceTree = "<group>"; };
 		FA4A22CA1DA1A7DF0007B9DF /* CuisineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineService.swift; sourceTree = "<group>"; };
 		FA4A22CB1DA1A7DF0007B9DF /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -127,7 +132,6 @@
 		FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = GoogleFrameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = GoogleFrameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = GoogleFrameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleFrameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		FA4A22FB1DA5F06D0007B9DF /* UIImageView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animation.swift"; sourceTree = "<group>"; };
 		FA4A22FD1DA5F1110007B9DF /* CircularImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageButton.swift; sourceTree = "<group>"; };
 		FA4A22FF1DA5F1110007B9DF /* FoodieButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodieButton.swift; sourceTree = "<group>"; };
@@ -190,7 +194,7 @@
 			files = (
 				FA83A7301DA5F81500253DD7 /* libc++.tbd in Frameworks */,
 				FA83A7321DA5F81A00253DD7 /* libz.tbd in Frameworks */,
-				FA83A7401DA5F8CA00253DD7 /* Accelerate.framework in Frameworks */,
+				FA219D971DA9F003003D4EA8 /* Accelerate.framework in Frameworks */,
 				FA83A7441DA5F8D700253DD7 /* CoreData.framework in Frameworks */,
 				FA83A7421DA5F8D100253DD7 /* CoreGraphics.framework in Frameworks */,
 				FA83A7461DA5F8DE00253DD7 /* CoreLocation.framework in Frameworks */,
@@ -201,6 +205,7 @@
 				FA83A7501DA5F90700253DD7 /* QuartzCore.framework in Frameworks */,
 				FA83A7521DA5F90B00253DD7 /* SystemConfiguration.framework in Frameworks */,
 				FA83A7541DA5F91000253DD7 /* UIKit.framework in Frameworks */,
+				FA219D941DA9EC3F003D4EA8 /* Alamofire.framework in Frameworks */,
 				FA4A22F61DA5EFC90007B9DF /* GoogleMaps.framework in Frameworks */,
 				FA4A22F71DA5EFC90007B9DF /* GoogleMapsBase.framework in Frameworks */,
 				FA4A22F81DA5EFC90007B9DF /* GoogleMapsCore.framework in Frameworks */,
@@ -223,6 +228,7 @@
 				FA5D52891D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */,
 				FA5D52871D9E0B73007DF983 /* RealmSwift.framework in Frameworks */,
 				FA83A73D1DA5F86400253DD7 /* libc++.tbd in Frameworks */,
+				FA219D9A1DA9F2C8003D4EA8 /* Alamofire.framework in Frameworks */,
 				FA5D528A1D9E0B73007DF983 /* Swinject.framework in Frameworks */,
 				FA83A73B1DA5F86100253DD7 /* libz.tbd in Frameworks */,
 				FA5D52861D9E0B73007DF983 /* Realm.framework in Frameworks */,
@@ -240,6 +246,7 @@
 				FA5D528E1D9E0B73007DF983 /* SwiftyBeaver.framework in Frameworks */,
 				FA5D528C1D9E0B73007DF983 /* RealmSwift.framework in Frameworks */,
 				FA83A73E1DA5F86400253DD7 /* libc++.tbd in Frameworks */,
+				FA219D9B1DA9F2C8003D4EA8 /* Alamofire.framework in Frameworks */,
 				FA5D528F1D9E0B73007DF983 /* Swinject.framework in Frameworks */,
 				FA83A73C1DA5F86100253DD7 /* libz.tbd in Frameworks */,
 				FA5D528B1D9E0B73007DF983 /* Realm.framework in Frameworks */,
@@ -310,7 +317,7 @@
 			children = (
 				FA83A72F1DA5F81500253DD7 /* libc++.tbd */,
 				FA83A7311DA5F81A00253DD7 /* libz.tbd */,
-				FA4A22F91DA5F0380007B9DF /* GoogleMaps.bundle */,
+				FA219D951DA9EFF1003D4EA8 /* GoogleMaps.bundle */,
 				FA83A73F1DA5F8CA00253DD7 /* Accelerate.framework */,
 				FA83A7431DA5F8D700253DD7 /* CoreData.framework */,
 				FA83A7411DA5F8D100253DD7 /* CoreGraphics.framework */,
@@ -322,6 +329,7 @@
 				FA83A74F1DA5F90700253DD7 /* QuartzCore.framework */,
 				FA83A7511DA5F90B00253DD7 /* SystemConfiguration.framework */,
 				FA83A7531DA5F91000253DD7 /* UIKit.framework */,
+				FA219D931DA9EC3F003D4EA8 /* Alamofire.framework */,
 				FA4A22F31DA5EFC90007B9DF /* GoogleMaps.framework */,
 				FA4A22F41DA5EFC90007B9DF /* GoogleMapsBase.framework */,
 				FA4A22F51DA5EFC90007B9DF /* GoogleMapsCore.framework */,
@@ -409,6 +417,7 @@
 			children = (
 				FA4A22C91DA1A7DF0007B9DF /* AllServices.swift */,
 				FA4A22CA1DA1A7DF0007B9DF /* CuisineService.swift */,
+				FA219D981DA9F0AB003D4EA8 /* GoogleService.swift */,
 				FA4A22CB1DA1A7DF0007B9DF /* LocationService.swift */,
 				FA4A22CC1DA1A7DF0007B9DF /* RestaurantService.swift */,
 				FA4A22CD1DA1A7DF0007B9DF /* SearchService.swift */,
@@ -542,10 +551,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA219D961DA9EFF1003D4EA8 /* GoogleMaps.bundle in Resources */,
 				FA5D52A21D9E0C0A007DF983 /* LaunchScreen.storyboard in Resources */,
 				FA5D52A11D9E0C0A007DF983 /* Assets.xcassets in Resources */,
 				FA5D52A31D9E0C0A007DF983 /* Main.storyboard in Resources */,
-				FA4A22FA1DA5F0380007B9DF /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +562,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA83A7391DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +569,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA83A73A1DA5F85D00253DD7 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +581,7 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
@@ -610,6 +618,7 @@
 				FA4A22D21DA1A7DF0007B9DF /* RestaurantService.swift in Sources */,
 				FA4A22D81DA1A8020007B9DF /* Cuisine.swift in Sources */,
 				FA83A7691DA85A8C00253DD7 /* InsertCuisineController.swift in Sources */,
+				FA219D991DA9F0AB003D4EA8 /* GoogleService.swift in Sources */,
 				FA4A22D31DA1A7DF0007B9DF /* SearchService.swift in Sources */,
 				FA4A22DA1DA1A8020007B9DF /* Restaurant.swift in Sources */,
 				FA4A22D11DA1A7DF0007B9DF /* LocationService.swift in Sources */,

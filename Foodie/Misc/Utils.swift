@@ -148,34 +148,21 @@ public func requestForPhotoLibraryAccess(_ success: @escaping (Bool) -> Void) {
 }
 
 
-//# MARK: - Regex Handlers
+//# MARK: - Misc
 
 /**
- Extracts string with given regex string.
+ Clamps numbers between a min and a max.
  
  - Parameters:
- - string: String to extract.
- - regex: String that is used to create a regex to extract string.
+    - min: Lower clamping bound.
+    - max: Upper clamping bound.
  
  - Returns:
- - Extracted string.
+    - A value that's clamped or the original value.
  */
-public func extractString(string: String, regex: String) -> String? {
-    do {
-        let regex = try NSRegularExpression(pattern: regex, options: [])
-        guard let result = regex.matches(in: string, options: [], range: NSMakeRange(0, string.characters.count)).first else {
-            return .none
-        }
-        
-        return (string as NSString).substring(with: result.range) as String
-    } catch let error as NSError {
-        Log.error(error.localizedDescription)
-        return .none
-    }
+public func clamp<T: Comparable>(_ value: T, min lowerBound: T, max upperBound: T) -> T {
+    return max(min(value, upperBound), lowerBound)
 }
-
-
-//# MARK: - Misc
 
 /**
  Convert TimeInterval into a human readable format

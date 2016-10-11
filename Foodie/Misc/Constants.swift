@@ -6,12 +6,20 @@
 //  Copyright © 2016 Alton Lau. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import SwiftyBeaver
+import UIKit
 
 //# MARK: - SwiftyBeaver Constants
 
 public let Log = SwiftyBeaver.self
+
+
+//# MARK: - Info.plist Properties
+
+public let ShouldUseGoogleAPI = {
+   return Bundle.main.object(forInfoDictionaryKey: "Use Google API") as? Bool ?? false
+}()
 
 
 //# MARK: - Google API
