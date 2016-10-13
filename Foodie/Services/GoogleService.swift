@@ -23,6 +23,7 @@ protocol GoogleService {
     func getDetails(for place: [String : Any], completion: @escaping (_ result: [String : Any]?) -> Void)
     func getPhoto(for place: [String : Any], size: CGSize, completion: @escaping (_ result: UIImage?) -> Void)
     func getTravelTime(from fromLoc: CLLocation, to toLoc: CLLocation, completion: @escaping (_ result: [(mode: TravelMode, duration: TimeInterval)]) -> Void)
+    func openMapsApplication(fromLocation fromLoc: CLLocation, toLocation toLoc: CLLocation, mode: TravelMode)
     func searchLocation(name: String, location: CLLocation, radius: Int, completion: @escaping (_ result: [String : Any]?) -> Void)
     
 }
@@ -38,6 +39,10 @@ class GoogleServiceImplementation: GoogleService {
     private let kTravelUrl = "/distancematrix"
     private let kSuccessStatusCode = 200
     
+    private let kAppleMapsBaseUrl = "http://maps.apple.com/"
+    private let kGoogleMapsBaseUrl = "comgooglemaps://"
+    
+    private let kDefaultMapZoomLevel: Float = 15.0
     private let kMinSize: CGFloat = 1.0
     private let kMaxSize: CGFloat = 1600.0
     
@@ -141,6 +146,26 @@ class GoogleServiceImplementation: GoogleService {
             dispatch_to_main {
                 completion(results)
             }
+        }
+    }
+    
+    func openMapsApplication(fromLocation fromLoc: CLLocation, toLocation toLoc: CLLocation, mode: TravelMode) {
+        let urlString: String
+        let saddr = "saddr=\(fromLoc.coordinate.latitude),\(fromLoc.coordinate.longitude)"
+        let daddr = "daddr=\(toLoc.coordinate.latitude),\(toLoc.coordinate.longitude)"
+        
+        if let url = URL(string: kGoogleMapsBaseUrl), UIApplication.shared.canOpenURL(url) {
+            let mode = "directionsmode=\(mode.rawValue)"
+            let zoom = "zoom=\(kDefaultMapZoomLevel)"
+            urlString = "\(kGoogleMapsBaseUrl)?\(saddr)&\(daddr)&\(mode)&\(zoom)"
+        } else {
+            Log.warning("User does not have Google Maps installed. Attempting to open Apple Maps.")
+            let mode = "dirflg=\((mode == .driving ? "d" : mode == .transit ? "r" : "w"))"
+            urlString = "\(kAppleMapsBaseUrl)?\(daddr)&\(mode)"
+        }
+        
+        if let url = URL(string: urlString) {
+            UIApplication.shared.open(url, options: [:])
         }
     }
     

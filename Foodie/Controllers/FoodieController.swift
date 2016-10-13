@@ -26,6 +26,7 @@ class FoodieController: ModalCardViewController {
     //# MARK: - Variables
     
     private var restaurantDetails: [String : Any]?
+    private var selectedTravelMode: TravelMode = .walking
     private var timer: Timer?
     
     var restaurant: Restaurant?
@@ -39,8 +40,32 @@ class FoodieController: ModalCardViewController {
     @IBOutlet var travelLabelCollection: [UILabel]!
     @IBOutlet weak var ratingImageView: UIImageView!
     @IBOutlet weak var ratingView: UIView!
-    @IBOutlet var travelImageViewCollection: [UIImageView]!
+    @IBOutlet var travelButtonCollection: [UIButton]!
     @IBOutlet weak var ratingViewWidthConstraint: NSLayoutConstraint!
+    
+    
+    //# MARK: - IBActions
+    
+    @IBAction func travelButtonPressed(_ sender: UIButton) {
+        guard let currentLocation = locationManager.location, let restaurant = restaurant else {
+            return
+        }
+        googleService.openMapsApplication(fromLocation: currentLocation, toLocation: restaurant.location, mode: selectedTravelMode)
+    }
+    
+    @IBAction func travelModeButtonPressed(_ sender: UIButton) {
+        guard let rawValue = sender.accessibilityLabel else {
+            return
+        }
+        selectedTravelMode = TravelMode(rawValue: rawValue) ?? selectedTravelMode
+        for button in travelButtonCollection {
+            if sender.isEqual(button) {
+                button.tintColor = UIColor.foodie
+            } else {
+                button.tintColor = UIColor.foodieGray
+            }
+        }
+    }
     
     
     //# MARK: - Overridden Methods
@@ -101,8 +126,12 @@ class FoodieController: ModalCardViewController {
                     if let result = result?["result"] as? [String : Any] {
                         self.restaurantDetails = result
                         self.reloadViews()
+                    } else {
+                        self.resetViews()
                     }
                 })
+            } else {
+                self.resetViews()
             }
         }
     }
@@ -121,16 +150,14 @@ class FoodieController: ModalCardViewController {
             }()
         restaurantLabel.text = restaurant.name
         ratingImageView.image = ratingImageView.image?.withRenderingMode(.alwaysTemplate)
-        for travelImageView in travelImageViewCollection {
-            travelImageView.image = travelImageView.image?.withRenderingMode(.alwaysTemplate)
+        for button in travelButtonCollection {
+            button.setImage(button.imageView?.image?.withRenderingMode(.alwaysTemplate), for: .normal)
         }
     }
     
     private func reloadViews() {
         guard let restaurantDetails = restaurantDetails else {
-            foodiePageView.image = .none
-            ratingView.backgroundColor = UIColor.white
-            ratingViewWidthConstraint.constant = 0
+            resetViews()
             return
         }
         
@@ -172,6 +199,13 @@ class FoodieController: ModalCardViewController {
         }
     }
     
+    private func resetViews() {
+        foodiePageView.hoursView.hours = []
+        foodiePageView.image = restaurant?.image ?? .none
+        ratingView.backgroundColor = UIColor.white
+        ratingViewWidthConstraint.constant = 0
+    }
+    
 }
 
 extension FoodieController: CLLocationManagerDelegate {
@@ -179,8 +213,8 @@ extension FoodieController: CLLocationManagerDelegate {
     //# MARK: - CLLocationManagerDelegate Methods
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        for imageView in travelImageViewCollection {
-            imageView.isHidden = status == .denied || status == .notDetermined
+        for button in travelButtonCollection {
+            button.isHidden = status == .denied || status == .notDetermined
         }
         for label in travelLabelCollection {
             label.isHidden = status == .denied || status == .notDetermined

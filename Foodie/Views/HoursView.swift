@@ -13,7 +13,10 @@ class HoursView: UIView {
     //# MARK: - Constants
     
     private let kTextSeparation: CGFloat = 8.0
+    private let kUnknownFontSize: CGFloat = 20.0
+    private let kUnknownText = "Opening Hours Not Found"
     
+    private let unknownLabel = UILabel()
     private let mondayLabel = UILabel()
     private let tuesdayLabel = UILabel()
     private let wednesdayLabel = UILabel()
@@ -48,6 +51,11 @@ class HoursView: UIView {
     //# MARK: - Private Methods
     
     private func reloadHours() {
+        unknownLabel.isHidden = !hours.isEmpty
+        if hours.isEmpty {
+            return
+        }
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mma"
         for hour in hours {
@@ -75,9 +83,10 @@ class HoursView: UIView {
         }
         let fromComponents = Calendar.current.dateComponents([.weekday, .hour], from: hours[weekday - 1].from)
         let toComponents = Calendar.current.dateComponents([.weekday, .hour, .minute], from: hours[weekday - 1].to)
-        guard let fromHour = fromComponents.hour, let toHour = toComponents.hour, let toMinute = toComponents.minute else {
+        guard let fromHour = fromComponents.hour, var toHour = toComponents.hour, let toMinute = toComponents.minute else {
             return
         }
+        toHour = toHour == 0 ? 24 : toHour
         if (hour >= fromHour && hour < toHour) || (hour == toHour && minute <= toMinute) {
             backgroundColor = UIColor.foodieLightGreen
         } else {
@@ -117,12 +126,24 @@ class HoursView: UIView {
         horizontalStackView.axis = .horizontal
         horizontalStackView.spacing = kTextSeparation * 2
         horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
-        
         addSubview(horizontalStackView)
+        
+        let unknownLabel = UILabel()
+        unknownLabel.backgroundColor = UIColor.white
+        unknownLabel.font = UIFont.systemFont(ofSize: kUnknownFontSize)
+        unknownLabel.text = kUnknownText
+        unknownLabel.textAlignment = .center
+        unknownLabel.textColor = UIColor.foodieGray
+        unknownLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(unknownLabel)
         
         addConstraints([
             NSLayoutConstraint(item: self, attribute: .centerX, relatedBy: .equal, toItem: horizontalStackView, attribute: .centerX, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: horizontalStackView, attribute: .centerY, multiplier: 1, constant: 0)
+            NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: horizontalStackView, attribute: .centerY, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: unknownLabel, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: unknownLabel, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: unknownLabel, attribute: .trailing, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: unknownLabel, attribute: .bottom, multiplier: 1, constant: 0)
             ])
     }
     

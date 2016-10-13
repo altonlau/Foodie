@@ -65,7 +65,7 @@
         <scene sceneID="86y-sB-SiP">
             <objects>
                 <navigationController title="All Foodies Navigation Controller" id="drk-w5-zCy" userLabel="All Foodies Navigation Controller" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gA-G0-6Sd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5gA-G0-6Sd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -104,6 +104,9 @@
                                         <state key="normal" title="Take Me There!">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="travelButtonPressed:" destination="xiM-tI-Xvq" eventType="touchUpInside" id="8qy-CL-T4k"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisines" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0N-1t-tdE">
                                         <constraints>
@@ -135,18 +138,38 @@
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wXX-6F-beh" userLabel="Horizontal Stack View">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walking-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-IO-FNv">
-                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycling-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Tdy-Sj-eGx">
-                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driving-icon" translatesAutoresizingMaskIntoConstraints="NO" id="hDx-pj-Vi7">
-                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transit-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GNF-rh-in0">
-                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf4-hb-YgW" userLabel="Walking Button">
+                                                <accessibility key="accessibilityConfiguration" label="walking"/>
+                                                <color key="tintColor" red="0.94117647059999998" green="0.4823529412" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="walking-icon"/>
+                                                <connections>
+                                                    <action selector="travelModeButtonPressed:" destination="xiM-tI-Xvq" eventType="touchUpInside" id="eBJ-Az-GLA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZI-S6-Pmf" userLabel="Bicycling Button">
+                                                <accessibility key="accessibilityConfiguration" label="bicycling"/>
+                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="bicycling-icon"/>
+                                                <connections>
+                                                    <action selector="travelModeButtonPressed:" destination="xiM-tI-Xvq" eventType="touchUpInside" id="os9-gy-h6p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cx-Nk-mhL" userLabel="Driving Button">
+                                                <accessibility key="accessibilityConfiguration" label="driving"/>
+                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="driving-icon"/>
+                                                <connections>
+                                                    <action selector="travelModeButtonPressed:" destination="xiM-tI-Xvq" eventType="touchUpInside" id="MNM-Bv-MEn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zns-NY-FXc" userLabel="Transit Button">
+                                                <accessibility key="accessibilityConfiguration" label="transit"/>
+                                                <color key="tintColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="transit-icon"/>
+                                                <connections>
+                                                    <action selector="travelModeButtonPressed:" destination="xiM-tI-Xvq" eventType="touchUpInside" id="7w2-xk-nd1"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-Md-CN1" userLabel="Walking Label">
@@ -179,11 +202,13 @@
                                     <constraint firstItem="d3s-Md-CN1" firstAttribute="top" secondItem="wXX-6F-beh" secondAttribute="bottom" constant="8" id="0ZK-gH-Ygj"/>
                                     <constraint firstItem="ygK-TD-Eav" firstAttribute="leading" secondItem="Seu-Js-nd9" secondAttribute="leading" id="3ib-MH-szq"/>
                                     <constraint firstItem="wXX-6F-beh" firstAttribute="leading" secondItem="j2y-rd-kaD" secondAttribute="leading" constant="32" id="7xI-Hz-RWk"/>
+                                    <constraint firstItem="d3s-Md-CN1" firstAttribute="centerX" secondItem="qf4-hb-YgW" secondAttribute="centerX" id="9uf-yg-Nxj"/>
                                     <constraint firstItem="trD-aI-jeq" firstAttribute="leading" secondItem="j2y-rd-kaD" secondAttribute="leadingMargin" id="AQF-Ko-8hg"/>
                                     <constraint firstAttribute="trailing" secondItem="wXX-6F-beh" secondAttribute="trailing" constant="32" id="AWf-w4-r23"/>
                                     <constraint firstItem="t48-s9-YyV" firstAttribute="top" secondItem="wXX-6F-beh" secondAttribute="bottom" constant="8" id="HXu-JE-TjJ"/>
                                     <constraint firstItem="Seu-Js-nd9" firstAttribute="top" secondItem="e0N-1t-tdE" secondAttribute="bottom" constant="32" id="Hr3-Kw-HEl"/>
                                     <constraint firstItem="trD-aI-jeq" firstAttribute="top" secondItem="53J-Uc-Iof" secondAttribute="bottom" constant="8" id="I4e-3j-eNW"/>
+                                    <constraint firstItem="SXv-Un-Tj3" firstAttribute="centerX" secondItem="5Cx-Nk-mhL" secondAttribute="centerX" id="JRd-fd-VHL"/>
                                     <constraint firstItem="53J-Uc-Iof" firstAttribute="leading" secondItem="j2y-rd-kaD" secondAttribute="leading" id="KbG-Vk-abw"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="344" id="KoA-Ef-AG6"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="560" id="KxG-AQ-BwA"/>
@@ -194,20 +219,18 @@
                                     <constraint firstAttribute="trailing" secondItem="53J-Uc-Iof" secondAttribute="trailing" id="Vt1-ca-9yf"/>
                                     <constraint firstItem="TF5-hW-JGc" firstAttribute="leading" secondItem="Seu-Js-nd9" secondAttribute="leading" id="WhG-EI-rhp"/>
                                     <constraint firstItem="mxf-Fm-qSc" firstAttribute="top" secondItem="wXX-6F-beh" secondAttribute="bottom" constant="8" id="Ya5-mH-KH1"/>
-                                    <constraint firstItem="SXv-Un-Tj3" firstAttribute="centerX" secondItem="GNF-rh-in0" secondAttribute="centerX" id="YuL-Xj-fdL"/>
                                     <constraint firstItem="TF5-hW-JGc" firstAttribute="trailing" secondItem="Seu-Js-nd9" secondAttribute="trailing" id="aJf-ZC-47a"/>
-                                    <constraint firstItem="mxf-Fm-qSc" firstAttribute="centerX" secondItem="Tdy-Sj-eGx" secondAttribute="centerX" id="aSL-DP-aeJ"/>
                                     <constraint firstItem="e0N-1t-tdE" firstAttribute="top" secondItem="trD-aI-jeq" secondAttribute="bottom" id="ddH-78-rjB"/>
                                     <constraint firstAttribute="trailing" secondItem="e0N-1t-tdE" secondAttribute="trailing" id="e1M-ue-kQk"/>
                                     <constraint firstItem="Seu-Js-nd9" firstAttribute="centerX" secondItem="j2y-rd-kaD" secondAttribute="centerX" id="hRN-yY-zR1"/>
-                                    <constraint firstItem="t48-s9-YyV" firstAttribute="centerX" secondItem="hDx-pj-Vi7" secondAttribute="centerX" id="idf-45-Wzq"/>
                                     <constraint firstItem="Co5-E1-Lfc" firstAttribute="leading" secondItem="j2y-rd-kaD" secondAttribute="leading" id="jkq-51-AX0"/>
+                                    <constraint firstItem="t48-s9-YyV" firstAttribute="centerX" secondItem="YZI-S6-Pmf" secondAttribute="centerX" id="jrN-8m-D0S"/>
                                     <constraint firstAttribute="trailing" secondItem="Co5-E1-Lfc" secondAttribute="trailing" id="oSA-ON-90r"/>
                                     <constraint firstItem="e0N-1t-tdE" firstAttribute="leading" secondItem="j2y-rd-kaD" secondAttribute="leadingMargin" id="oYc-6v-eFG"/>
-                                    <constraint firstItem="d3s-Md-CN1" firstAttribute="centerX" secondItem="ISb-IO-FNv" secondAttribute="centerX" id="tV6-q0-UT5"/>
                                     <constraint firstItem="ygK-TD-Eav" firstAttribute="bottom" secondItem="Seu-Js-nd9" secondAttribute="bottom" id="vIu-3e-zAM"/>
                                     <constraint firstItem="ygK-TD-Eav" firstAttribute="top" secondItem="Seu-Js-nd9" secondAttribute="top" id="wZp-of-UIk"/>
                                     <constraint firstItem="TF5-hW-JGc" firstAttribute="top" secondItem="Seu-Js-nd9" secondAttribute="top" id="xt4-ew-Z2s"/>
+                                    <constraint firstItem="Zns-NY-FXc" firstAttribute="centerX" secondItem="mxf-Fm-qSc" secondAttribute="centerX" id="zME-GE-n98"/>
                                     <constraint firstItem="SXv-Un-Tj3" firstAttribute="top" secondItem="wXX-6F-beh" secondAttribute="bottom" constant="8" id="zcX-vA-RFO"/>
                                     <constraint firstAttribute="trailing" secondItem="trD-aI-jeq" secondAttribute="trailing" id="zoy-CG-ISQ"/>
                                 </constraints>
@@ -239,14 +262,14 @@
                         <outlet property="ratingView" destination="ygK-TD-Eav" id="B0K-QF-jlz"/>
                         <outlet property="ratingViewWidthConstraint" destination="lrO-QS-DOo" id="JeG-c2-Vfn"/>
                         <outlet property="restaurantLabel" destination="trD-aI-jeq" id="MbT-7P-gKQ"/>
-                        <outletCollection property="travelImageViewCollection" destination="ISb-IO-FNv" collectionClass="NSMutableArray" id="AT9-S1-tX4"/>
-                        <outletCollection property="travelImageViewCollection" destination="Tdy-Sj-eGx" collectionClass="NSMutableArray" id="U6f-S1-a7t"/>
-                        <outletCollection property="travelImageViewCollection" destination="hDx-pj-Vi7" collectionClass="NSMutableArray" id="Ieq-Fw-FSM"/>
-                        <outletCollection property="travelImageViewCollection" destination="GNF-rh-in0" collectionClass="NSMutableArray" id="0au-0d-d1K"/>
                         <outletCollection property="travelLabelCollection" destination="d3s-Md-CN1" collectionClass="NSMutableArray" id="mdN-a4-nBh"/>
                         <outletCollection property="travelLabelCollection" destination="mxf-Fm-qSc" collectionClass="NSMutableArray" id="zb5-GI-q9m"/>
                         <outletCollection property="travelLabelCollection" destination="t48-s9-YyV" collectionClass="NSMutableArray" id="Us8-qt-UL3"/>
                         <outletCollection property="travelLabelCollection" destination="SXv-Un-Tj3" collectionClass="NSMutableArray" id="vrw-On-Jyi"/>
+                        <outletCollection property="travelButtonCollection" destination="qf4-hb-YgW" collectionClass="NSMutableArray" id="eru-MK-4Om"/>
+                        <outletCollection property="travelButtonCollection" destination="YZI-S6-Pmf" collectionClass="NSMutableArray" id="BmS-18-3Bt"/>
+                        <outletCollection property="travelButtonCollection" destination="5Cx-Nk-mhL" collectionClass="NSMutableArray" id="ux3-IY-mee"/>
+                        <outletCollection property="travelButtonCollection" destination="Zns-NY-FXc" collectionClass="NSMutableArray" id="DaS-qb-f8U"/>
                         <segue destination="M9d-XP-9Ld" kind="unwind" identifier="foodieUnwindSegueIdentifier" customClass="ModalCardUnwindSegue" customModule="Foodie" customModuleProvider="target" unwindAction="unwindFoodieSegue:" id="iHg-YS-mtx"/>
                     </connections>
                 </viewController>
@@ -269,18 +292,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dOE-PG-jYN" id="rGl-c9-saO">
-                                    <frame key="frameInset" width="375" height="63.5"/>
+                                    <frame key="frameInset" width="375" height="63"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0TG-dF-Ig7">
-                                            <frame key="frameInset" minX="15" minY="16" width="31.5" height="19.5"/>
+                                            <frame key="frameInset" minX="15" minY="15" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tW2-5u-Yvk">
-                                            <frame key="frameInset" minX="15" minY="35.5" width="30.5" height="13.5"/>
+                                            <frame key="frameInset" minX="15" minY="35" width="31" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -360,18 +383,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="utM-4V-8E6" id="lO0-LI-SHo">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qge-PE-AY1">
-                                                    <frame key="frameInset" minX="15" minY="6" width="31.5" height="19.5"/>
+                                                    <frame key="frameInset" minX="15" minY="5" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.41568627450000001" green="0.4823529412" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1RE-DR-H3s">
-                                                    <frame key="frameInset" minX="15" minY="25.5" width="40.5" height="13.5"/>
+                                                    <frame key="frameInset" minX="15" minY="25" width="41" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.56470588239999997" green="0.62352941179999999" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -807,7 +830,7 @@
         <scene sceneID="c0x-zx-lRC">
             <objects>
                 <navigationController title="Settings Navigation Controller" id="8dF-Ws-QQY" userLabel="Settings Navigation Controller" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZNW-G1-xPl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZNW-G1-xPl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -837,10 +860,10 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cuisineTableViewCellIdentifier" id="boD-3D-qLf" customClass="CuisineSettingTableViewCell" customModule="Foodie" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="boD-3D-qLf" id="Mer-za-N8b">
-                                                    <frame key="frameInset" width="1000" height="44"/>
+                                                    <frame key="frameInset" width="375" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiv-MC-vVX">
